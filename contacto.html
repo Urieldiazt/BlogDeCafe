@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog Cafe</title>
+</head>
+<body>
+    <header class="header header__img">
+        <div class="header__contenido container">
+            <div class="header__texto">
+                <a href="index.html">
+                    <h1 class="header__logo no-margin">Blog<span class="header__span">Cafe</span></h1>
+                </a>
+            </div>
+
+            <nav class="header__navegacion">
+                <a class="header__enlace" href="nosotros.html">Nosotros</a>
+                <a class="header__enlace" href="contacto.html">Contacto</a>
+                <a class="header__enlace" href="cursos.html">Cursos</a>
+            </nav>
+
+        </div>
+
+        <div class="header__text text-center">
+            <h2 class="colorb">Blog de café con consejos y cursos</h2>
+            <p class="colorb">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+
+    <main class="nosotros container">
+        <h2 class="text-center">Contacto</h2>
+            <div class="contacto">
+
+                <div class="contacto__imagen">
+                </div>
+
+                <form class="form">
+                    <div class="formulario__bloques">
+                        <div class="formulario__bloque">
+                            <label class="formulario__text" for="nombre">Nombre</label>
+                                <input class="formulario__entrada" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required="true">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__text" for="e-mail">Tu E-mail</label>
+                                <input class="formulario__entrada" type="email" name="e-mail" id="e-mail" placeholder="Tu E-mail" required="true">
+                        </div>
+                        <div class="formulario__bloque">
+                            <label class="formulario__text" for="mensaje">Mensaje</label>
+                                <textarea class="formulario__entrada" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                            <div class="formulario__enviar">
+                                <input class="boton boton--w100" type="submit" value="Enviar">
+                            </div>
+
+                </form>
+            </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="header__contenido footer__contenido container">
+            <div class="header__texto">
+                <a href="index.html">
+                    <h1 class="header__logo">Blog<span class="header__span">Cafe</span></h1>
+                </a>
+            </div>
+
+            <nav class="footer__navegacion">
+                <a class="header__enlace" href="nosotros.html">Nosotros</a>
+                <a class="header__enlace" href="contacto.html">Contacto</a>
+                <a class="header__enlace" href="cursos.html">Cursos</a>
+            </nav>
+
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
