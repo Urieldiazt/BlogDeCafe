@@ -76,6 +76,7 @@ h4{
 
 h1,h2,h3,h4{
     font-size: 400;
+    text-transform: uppercase;
 }
 /* Navegacion */
 
@@ -322,4 +323,16 @@ h1,h2,h3,h4{
     .boton--w100{
         width: auto;
      }
+ }
+
+ /* Entrada */
+ 
+@media (min-width:  768px){
+    .entrada__img{
+        padding: 4rem;
+     }    
+}
+ .entrada__text{
+    text-align: center;
+    font-size: 1.8rem;
  }
