@@ -381,8 +381,7 @@ h1,h2,h3,h4{
   }
 
   .error{
-    margin: 0.5rem;
-    margin: 0 auto;
+    margin-left: 8rem;
     background-color: rgb(210, 65, 65);
     color: white;
     text-align: center;
