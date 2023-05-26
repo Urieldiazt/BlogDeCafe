@@ -14,7 +14,7 @@ function formulario(){
     const nombre = document.querySelector('#nombre');
     const email = document.querySelector('#email');
     const mensaje = document.querySelector('#mensaje');
-    const formulario = document.querySelector('form');
+    const formulario = document.querySelector('.form');
     const enviar = document.querySelector('form [type="submit"]');
     const spinner = document.querySelector('#spinner');
 
@@ -29,11 +29,10 @@ function formulario(){
         //&& !validarEmail(email)
         if(Object.values(datosForm).includes('') ){
             mensajeFormulario('Todos los campos son obligatorios', true);
-            console.log(datosForm);
             return;
         }
-            console.log(datosForm);
-            mensajeFormulario('El mensaje se envio correctamente')
+            mensajeFormulario('El mensaje se envio correctamente');
+            
     }
 
     function mensajeFormulario(mensaje, error = null){
@@ -54,6 +53,8 @@ function formulario(){
                 formulario.appendChild(mensajeCrea);
                 setTimeout(()=>{
                     mensajeCrea.remove();
+                    formulario.reset();
+                    limpiarDatos();
                 },3000)
             },4000)
         }
@@ -61,8 +62,13 @@ function formulario(){
             setTimeout(()=>{
                 mensajeCrea.remove();
             },3000);
+   
+    }
 
-        
+    function limpiarDatos(){
+        datosForm.nombre = '';
+        datosForm.email = '';
+        datosForm.mensaje = '';
     }
 
     function validarCampos(e){
@@ -81,7 +87,6 @@ function formulario(){
 
         limpiarAlerta(referencia);
         datosForm[e.target.id] = e.target.value;
-        console.log(datosForm);
     }
 
      function alerta(mensaje, referencia){

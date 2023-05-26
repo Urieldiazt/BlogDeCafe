@@ -295,18 +295,27 @@ h1,h2,h3,h4{
     width: 95%;
 }
 
- .formulario__bloque{
+.formulario__bloque{
     display: flex;
-    margin:2rem ;
-    gap: 2rem;
- }
+    flex-direction: column;
+    margin: 1.5rem 0 ;
+}
+
+@media (min-width: 480px) {
+    .formulario__bloque{
+       display: flex;
+       flex-direction: row;
+       margin:1rem  0;
+       gap: 2rem;
+    }
+}
 
  .formulario__text{
     flex: 0 0 6rem;
  }
 
  .formulario__entrada{
-   flex: 1;
+     flex: 1;
  }
 
  .formulario__enviar{
