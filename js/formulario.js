@@ -27,12 +27,12 @@ function formulario(){
     function enviarFormulario(e){
         e.preventDefault();
         //&& !validarEmail(email)
-        const {nombre, email, mensaje} = datosForm;
-        if(Object.values(datosForm).includes('') && !validarEmail(email)){
+        if(Object.values(datosForm).includes('') ){
             mensajeFormulario('Todos los campos son obligatorios', true);
-            
+            console.log(datosForm);
             return;
         }
+            console.log(datosForm);
             mensajeFormulario('El mensaje se envio correctamente')
     }
 
@@ -70,11 +70,12 @@ function formulario(){
         if(e.target.value.trim() === ''){
             //temple string
             alerta(`El campo ${e.target.id} se encuentra vacio`, referencia);
+            datosForm[e.target.id] = '';
             return;
         }
         if(e.target.id === 'email' && !validarEmail(e.target.value) ){
             alerta('El campo email no es valido', referencia);
-            datosForm.email = '';
+            datosForm[e.target.id] = '';
             return;
         }
 
@@ -109,3 +110,4 @@ function formulario(){
 
 }
 
+/*Uriel Diaz Teodosio 2023*/
