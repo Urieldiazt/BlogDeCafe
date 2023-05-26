@@ -44,23 +44,44 @@
 
                 <form class="form">
                     <div class="formulario__bloques">
-                        <div class="formulario__bloque">
-                            <label class="formulario__text" for="nombre">Nombre</label>
-                                <input class="formulario__entrada" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required="true">
-                        </div>
-                        <div class="formulario__bloque">
-                            <label class="formulario__text" for="e-mail">Tu E-mail</label>
-                                <input class="formulario__entrada" type="email" name="e-mail" id="e-mail" placeholder="Tu E-mail" required="true">
-                        </div>
-                        <div class="formulario__bloque">
-                            <label class="formulario__text" for="mensaje">Mensaje</label>
+                       <div class="mensaje">
+                            <div class="formulario__bloque">
+                                <label class="formulario__text" for="nombre">Nombre</label>
+                                <input class="formulario__entrada" type="text" name="nombre" id="nombre" placeholder="Tu Nombre" >
+                            </div>
+                       </div><!--nombre-->
+
+                        <div class="mensaje">
+                            <div class="formulario__bloque">
+                                <label class="formulario__text email" for="email">Tu E-mail</label>
+                                <input class="formulario__entrada " type="email" name="email" id="email" placeholder="Tu E-mail" >
+                            </div>
+                        </div><!--Email-->
+
+
+                        <div class="mensaje">
+                            <div class="formulario__bloque">
+                                <label class="formulario__text">Mensaje</label>
                                 <textarea class="formulario__entrada" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                            </div>
+                        </div><!--mensaje-->
+
+                    </div><!--FormularioBloques-->
+
+                    <div id="spinner" class="spinner agregar quitar">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
                         </div>
                     </div>
 
-                            <div class="formulario__enviar">
-                                <input class="boton boton--w100" type="submit" value="Enviar">
-                            </div>
+                    <div class="formulario__enviar">
+                        <input class="boton boton--w100 cursor" type="submit" value="Enviar">
+                    </div>
 
                 </form>
             </div>
@@ -84,5 +105,6 @@
         </div>
     </footer>
     <script src="js/modernizr.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 </html>
